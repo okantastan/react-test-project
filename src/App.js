@@ -1,25 +1,23 @@
 import logo from "./logo.svg";
 import { useEffect } from "react";
+import styles from './style.scss'
 
-import styles from './style.css'
-import './style.scss'
-import Bootstrap from "./Bootstrap";
+import './tailwind.css';
+
+import Button from "./Button";
+import Tailwind from "./Tailwind";
 
 function App() {
   return (
-    <div className={styles.App}>
-        <>
-        <h3>{process.env.NODE_ENV}</h3>
-            <img src="/logo192.png" alt="" />
-            <img src={logo} alt="" width={500} />
-        </>
+    <>
 
-        <p className="env">
-          <span>Test Env</span>
-        </p>
+        <Button text="Tailwind Button" />
+        <Button text="Tailwind Button" variant="success" />
+        <Button text="Tailwind Button" variant="danger" />
+        <Button text="Tailwind Button" variant="warning" />
 
-        <Bootstrap />
-    </div>
+        
+    </>
   );
 }
 
