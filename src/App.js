@@ -7,6 +7,8 @@ import './tailwind.css';
 import Button from "./Button";
 import Tailwind from "./Tailwind";
 
+import Bootstrap from "./Bootstrap"
+
 function App() {
   return (
     <>
@@ -16,7 +18,7 @@ function App() {
         <Button text="Tailwind Button" variant="danger" />
         <Button text="Tailwind Button" variant="warning" />
 
-        
+        <Bootstrap />
     </>
   );
 }
